@@ -1,4 +1,4 @@
-const { Color } = require("./models/color");
+const { Color } = require("./models/Color");
 const mongoose = require("mongoose");
 const config = require("config");
 const colors = require("./data/colors");
