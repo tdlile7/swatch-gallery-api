@@ -25,13 +25,13 @@ async function seed() {
     await Color.deleteMany();
 
     //Saturate database by saving seed data
-    await Color.insertMany(colors);
+    await Color.insertMany([...colors].splice(0, 100));
+    await Color.insertMany([...colors].splice(100));
 
     mongoose.disconnect();
     console.log("Database has been seeded!");
   } catch (err) {
     console.error(err.message);
-    console.log(colors);
     process.exit(1);
   }
 }

@@ -426,10 +426,6 @@ const colors = [
     category: "gray"
   },
   {
-    hexCode: "#616a6b",
-    category: "gray"
-  },
-  {
     hexCode: "#5d4037",
     category: "brown"
   },
